@@ -34,7 +34,7 @@ export default function LocationCTA() {
                   <div className="flex items-center gap-3">
                     <MapPin size={16} className="text-[#c9a96e]/60" />
                     <span className="text-[13px] text-white/60">
-                      Richmond Town, Bengaluru, Karnataka
+                      No. 4, Clapham Street, Richmond Town, Bengaluru
                     </span>
                   </div>
                   <div className="flex items-center gap-3">

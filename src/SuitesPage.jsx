@@ -392,7 +392,7 @@ export default function SuitesPage() {
                 CALL US NOW
               </a>
               <a
-                href="mailto:hello@richmondsuites.in"
+                href="mailto:nayazsheriff@richmondsuites.in"
                 className="text-[12px] tracking-[0.15em] text-white/50 transition-colors hover:text-white"
               >
                 EMAIL INQUIRY
@@ -436,7 +436,7 @@ export default function SuitesPage() {
               <p className="mb-4 text-[10px] tracking-[0.3em] text-white/30">CONTACT</p>
               <div className="flex flex-col gap-2.5 text-[13px] text-white/45">
                 <a href="tel:+919986197711" className="hover:text-white/80">+91 99861 97711</a>
-                <a href="mailto:hello@richmondsuites.in" className="hover:text-white/80">hello@richmondsuites.in</a>
+                <a href="mailto:nayazsheriff@richmondsuites.in" className="hover:text-white/80">nayazsheriff@richmondsuites.in</a>
               </div>
             </div>
           </div>

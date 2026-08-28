@@ -68,10 +68,10 @@ export default function Footer() {
                 +91 99861 97711
               </a>
               <a
-                href="mailto:hello@richmondsuites.in"
+                href="mailto:nayazsheriff@richmondsuites.in"
                 className="hover:text-white/80"
               >
-                hello@richmondsuites.in
+                nayazsheriff@richmondsuites.in
               </a>
               <p className="mt-1 leading-relaxed text-white/30">
                 Richmond Town
