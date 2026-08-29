@@ -75,14 +75,14 @@ export default function HeroSection() {
   const co = formatDate(checkOut);
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-[#12110f]">
+    <div className="relative w-full min-h-screen overflow-hidden bg-[#faf6ee]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#12110f] via-transparent to-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#faf6ee] via-transparent to-black/25" />
 
       <div className="relative z-10 flex min-h-screen flex-col">
         <header className="flex items-center justify-between px-6 py-6 md:px-16 md:py-8">
@@ -133,7 +133,7 @@ export default function HeroSection() {
             >
               +91 99861 97711
             </a>
-            <button className="bg-white px-5 py-2.5 text-[11px] font-medium tracking-[0.18em] text-[#12110f] transition-colors hover:bg-[#c9a96e]">
+            <button className="bg-[#221b14] px-5 py-2.5 text-[11px] font-medium tracking-[0.18em] text-[#faf6ee] transition-colors hover:bg-[#b08d4f]">
               BOOK NOW
             </button>
           </div>
@@ -148,13 +148,13 @@ export default function HeroSection() {
         </header>
 
         {menuOpen && (
-          <div className="flex flex-col gap-5 border-b border-white/10 bg-[#12110f]/95 px-6 py-8 lg:hidden">
+          <div className="flex flex-col gap-5 border-b border-[#221b14]/10 bg-[#faf6ee]/95 px-6 py-8 lg:hidden">
             {NAV_LINKS.map((link) => (
               link === "Suites" ? (
                 <Link
                   key={link}
                   to="/suites"
-                  className="text-[13px] tracking-[0.12em] text-white/70"
+                  className="text-[13px] tracking-[0.12em] text-[#221b14]/70"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.toUpperCase()}
@@ -163,13 +163,13 @@ export default function HeroSection() {
                 <a
                   key={link}
                   href="#"
-                  className="text-[13px] tracking-[0.12em] text-white/70"
+                  className="text-[13px] tracking-[0.12em] text-[#221b14]/70"
                 >
                   {link.toUpperCase()}
                 </a>
               )
             ))}
-            <button className="mt-2 w-full bg-white py-3 text-[11px] font-medium tracking-[0.18em] text-[#12110f]">
+            <button className="mt-2 w-full bg-[#221b14] py-3 text-[11px] font-medium tracking-[0.18em] text-[#faf6ee]">
               BOOK NOW
             </button>
           </div>
@@ -207,16 +207,16 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative z-20 mx-4 mb-4 grid grid-cols-2 gap-px bg-white/10 sm:mx-16 sm:mb-8 sm:grid-cols-4">
-          <div className="bg-[#1a1714]/95 px-5 py-4 sm:px-6 sm:py-5">
-            <p className="mb-1 text-[10px] tracking-[0.2em] text-white/40">
+        <div className="relative z-20 mx-4 mb-4 grid grid-cols-2 gap-px bg-[#221b14]/15 sm:mx-16 sm:mb-8 sm:grid-cols-4">
+          <div className="bg-[#faf6ee] px-5 py-4 sm:px-6 sm:py-5">
+            <p className="mb-1 text-[10px] tracking-[0.2em] text-[#221b14]/50">
               CHECK IN
             </p>
             <label className="relative flex cursor-pointer items-center justify-between">
-              <span className="font-serif text-[16px] text-white">
+              <span className="font-serif text-[16px] text-[#221b14]">
                 {ci.full}
               </span>
-              <Calendar size={14} className="text-white/40" />
+              <Calendar size={14} className="text-[#221b14]/50" />
               <input
                 type="date"
                 value={checkIn}
@@ -225,18 +225,18 @@ export default function HeroSection() {
                 className="absolute inset-0 opacity-0"
               />
             </label>
-            <p className="mt-0.5 text-[11px] text-white/30">{ci.day}</p>
+            <p className="mt-0.5 text-[11px] text-[#221b14]/45">{ci.day}</p>
           </div>
 
-          <div className="bg-[#1a1714]/95 px-5 py-4 sm:px-6 sm:py-5">
-            <p className="mb-1 text-[10px] tracking-[0.2em] text-white/40">
+          <div className="bg-[#faf6ee] px-5 py-4 sm:px-6 sm:py-5">
+            <p className="mb-1 text-[10px] tracking-[0.2em] text-[#221b14]/50">
               CHECK OUT
             </p>
             <label className="relative flex cursor-pointer items-center justify-between">
-              <span className="font-serif text-[16px] text-white">
+              <span className="font-serif text-[16px] text-[#221b14]">
                 {co.full}
               </span>
-              <Calendar size={14} className="text-white/40" />
+              <Calendar size={14} className="text-[#221b14]/50" />
               <input
                 type="date"
                 value={checkOut}
@@ -245,24 +245,24 @@ export default function HeroSection() {
                 className="absolute inset-0 opacity-0"
               />
             </label>
-            <p className="mt-0.5 text-[11px] text-white/30">{co.day}</p>
+            <p className="mt-0.5 text-[11px] text-[#221b14]/45">{co.day}</p>
           </div>
 
-          <div ref={guestsRef} className="relative bg-[#1a1714]/95 px-5 py-4 sm:px-6 sm:py-5">
-            <p className="mb-1 text-[10px] tracking-[0.2em] text-white/40">
+          <div ref={guestsRef} className="relative bg-[#faf6ee] px-5 py-4 sm:px-6 sm:py-5">
+            <p className="mb-1 text-[10px] tracking-[0.2em] text-[#221b14]/50">
               GUESTS
             </p>
             <button
               onClick={() => setGuestsOpen((v) => !v)}
               className="flex w-full items-center justify-between"
             >
-              <span className="font-serif text-[16px] text-white">
+              <span className="font-serif text-[16px] text-[#221b14]">
                 {guests}
               </span>
-              <ChevronDown size={14} className={`text-white/40 transition-transform ${guestsOpen ? "rotate-180" : ""}`} />
+              <ChevronDown size={14} className={`text-[#221b14]/50 transition-transform ${guestsOpen ? "rotate-180" : ""}`} />
             </button>
             {guestsOpen && (
-              <div className="absolute bottom-full left-0 z-30 mb-1 w-full border border-white/10 bg-[#1a1714]">
+              <div className="absolute bottom-full left-0 z-30 mb-1 w-full border border-[#221b14]/15 bg-[#faf6ee]">
                 {["1 Adult", "2 Adults", "3 Adults", "2 Adults, 1 Child"].map(
                   (g) => (
                     <button
@@ -271,8 +271,8 @@ export default function HeroSection() {
                         setGuests(g);
                         setGuestsOpen(false);
                       }}
-                      className={`block w-full px-5 py-3 text-left text-[13px] transition-colors hover:bg-white/5 hover:text-white ${
-                        guests === g ? "text-[#c9a96e]" : "text-white/70"
+                      className={`block w-full px-5 py-3 text-left text-[13px] transition-colors hover:bg-[#221b14]/5 hover:text-[#221b14] ${
+                        guests === g ? "text-[#b08d4f]" : "text-[#221b14]/70"
                       }`}
                     >
                       {g}
@@ -285,7 +285,7 @@ export default function HeroSection() {
 
           <button
             onClick={handleCheckAvailability}
-            className="flex items-center justify-center bg-white px-5 py-4 text-[11px] font-medium tracking-[0.18em] text-[#12110f] transition-colors hover:bg-[#c9a96e] sm:px-6 sm:py-5"
+            className="flex items-center justify-center bg-[#221b14] px-5 py-4 text-[11px] font-medium tracking-[0.18em] text-[#faf6ee] transition-colors hover:bg-[#b08d4f] sm:px-6 sm:py-5"
           >
             CHECK AVAILABILITY
           </button>

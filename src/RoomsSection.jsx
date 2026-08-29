@@ -49,17 +49,17 @@ const ROOMS = [
 
 export default function RoomsSection() {
   return (
-    <section className="bg-[#12110f]">
+    <section className="bg-[#faf6ee]">
       <div className="px-6 py-20 md:px-16 md:py-28">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-14 md:mb-20">
-            <p className="mb-3 text-[11px] tracking-[0.3em] text-[#c9a96e]">
+            <p className="mb-3 text-[11px] tracking-[0.3em] text-[#b08d4f]">
               ROOMS &amp; SUITES
             </p>
-            <h2 className="font-serif text-[32px] leading-[1.15] text-white sm:text-[40px]">
+            <h2 className="font-serif text-[32px] leading-[1.15] text-[#221b14] sm:text-[40px]">
               Space to settle in, your way.
             </h2>
-            <p className="mt-5 max-w-lg text-[14px] leading-[1.8] text-white/45">
+            <p className="mt-5 max-w-lg text-[14px] leading-[1.8] text-[#221b14]/60">
               Six flexible room profiles for short visits, business travel,
               family stays, and longer living. Rates and availability confirmed
               directly with us.
@@ -69,7 +69,7 @@ export default function RoomsSection() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {ROOMS.map((room) => (
               <Reveal key={room.name} className="group relative overflow-hidden">
-                <div className="relative aspect-[4/3] overflow-hidden bg-[#1a1815]">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#e9dfc9]">
                   {room.image ? (
                     <img
                       src={room.image}
@@ -79,7 +79,7 @@ export default function RoomsSection() {
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center">
-                      <span className="text-[13px] text-white/20">Photo pending</span>
+                      <span className="text-[13px] text-[#221b14]/30">Photo pending</span>
                     </div>
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />

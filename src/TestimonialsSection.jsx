@@ -27,14 +27,14 @@ const REVIEWS = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-[#1a1815]">
+    <section className="bg-[#f1eadb]">
       <div className="px-6 py-20 md:px-16 md:py-28">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mb-14 md:mb-20">
-            <p className="mb-3 text-[11px] tracking-[0.3em] text-[#c9a96e]">
+            <p className="mb-3 text-[11px] tracking-[0.3em] text-[#b08d4f]">
               GUESTS SAY
             </p>
-            <h2 className="font-serif text-[32px] leading-[1.15] text-white sm:text-[40px]">
+            <h2 className="font-serif text-[32px] leading-[1.15] text-[#221b14] sm:text-[40px]">
               From the people who&apos;ve
               <br className="hidden sm:block" />{" "}
               stayed with us.
@@ -44,17 +44,17 @@ export default function TestimonialsSection() {
           <div className="grid gap-10 md:grid-cols-3 md:gap-12">
             {REVIEWS.map((review, i) => (
               <Reveal key={i} className="flex flex-col">
-                <div className="mb-6 text-[28px] leading-none text-[#c9a96e]/40">
+                <div className="mb-6 text-[28px] leading-none text-[#b08d4f]/40">
                   &ldquo;
                 </div>
-                <p className="flex-1 text-[14px] leading-[1.85] text-white/55 italic">
+                <p className="flex-1 text-[14px] leading-[1.85] text-[#221b14]/70 italic">
                   {review.quote}
                 </p>
-                <div className="mt-8 border-t border-white/8 pt-5">
-                  <p className="text-[13px] font-medium text-white/80">
+                <div className="mt-8 border-t border-[#221b14]/10 pt-5">
+                  <p className="text-[13px] font-medium text-[#221b14]/85">
                     {review.author}
                   </p>
-                  <p className="mt-1 text-[12px] text-white/30">
+                  <p className="mt-1 text-[12px] text-[#221b14]/45">
                     {review.from} &middot; {review.stay}
                   </p>
                 </div>

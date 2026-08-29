@@ -179,7 +179,7 @@ const SUITES = [
 
 export default function SuitesPage() {
   return (
-    <div className="min-h-screen bg-[#12110f]">
+    <div className="min-h-screen bg-[#faf6ee]">
       {/* Navigation */}
       <header className="flex items-center justify-between px-6 py-6 md:px-16 md:py-8">
         <Link to="/" className="flex items-center gap-3">
@@ -188,27 +188,27 @@ export default function SuitesPage() {
             height="20"
             viewBox="0 0 24 24"
             fill="none"
-            className="text-[#c9a96e]"
+            className="text-[#b08d4f]"
           >
             <path d="M12 2C9 6 9 10 12 14C15 10 15 6 12 2Z" fill="currentColor" />
             <path d="M12 22V13" stroke="currentColor" strokeWidth="1.2" />
           </svg>
           <div className="leading-none">
-            <span className="block font-serif text-[14px] tracking-[0.18em] text-white">
+            <span className="block font-serif text-[14px] tracking-[0.18em] text-[#221b14]">
               RICHMOND SUITES
             </span>
           </div>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
-          <Link to="/suites" className="text-[12px] tracking-[0.14em] text-[#c9a96e]">
+          <Link to="/suites" className="text-[12px] tracking-[0.14em] text-[#b08d4f]">
             SUITES
           </Link>
           {["Amenities", "Location", "About Us", "Contact"].map((link) => (
             <a
               key={link}
               href="#"
-              className="text-[12px] tracking-[0.14em] text-white/70 transition-colors hover:text-white"
+              className="text-[12px] tracking-[0.14em] text-[#221b14]/60 transition-colors hover:text-[#221b14]"
             >
               {link.toUpperCase()}
             </a>
@@ -216,10 +216,10 @@ export default function SuitesPage() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
-          <a href="tel:+919986197711" className="text-[12px] tracking-wide text-white/60 hover:text-white">
+          <a href="tel:+919986197711" className="text-[12px] tracking-wide text-[#221b14]/60 hover:text-[#221b14]">
             +91 99861 97711
           </a>
-          <button className="bg-white px-5 py-2.5 text-[11px] font-medium tracking-[0.18em] text-[#12110f] transition-colors hover:bg-[#c9a96e]">
+          <button className="bg-[#221b14] px-5 py-2.5 text-[11px] font-medium tracking-[0.18em] text-[#faf6ee] transition-colors hover:bg-[#b08d4f]">
             BOOK NOW
           </button>
         </div>
@@ -230,20 +230,20 @@ export default function SuitesPage() {
         <Reveal anim="scale">
           <Link
             to="/"
-            className="mb-8 inline-flex items-center gap-2 text-[11px] tracking-[0.15em] text-white/50 transition-colors hover:text-[#c9a96e]"
+            className="mb-8 inline-flex items-center gap-2 text-[11px] tracking-[0.15em] text-[#221b14]/55 transition-colors hover:text-[#b08d4f]"
           >
             <ArrowLeft size={14} />
             BACK TO HOME
           </Link>
-          <p className="mb-3 text-[11px] tracking-[0.3em] text-[#c9a96e]">
+          <p className="mb-3 text-[11px] tracking-[0.3em] text-[#b08d4f]">
             OUR COLLECTION
           </p>
-          <h1 className="font-serif text-[40px] leading-[1.1] text-white sm:text-[52px] md:text-[64px]">
+          <h1 className="font-serif text-[40px] leading-[1.1] text-[#221b14] sm:text-[52px] md:text-[64px]">
             Six Suites,
             <br />
             Six Ways to Stay.
           </h1>
-          <p className="mt-6 max-w-xl text-[14px] leading-[1.8] text-white/45">
+          <p className="mt-6 max-w-xl text-[14px] leading-[1.8] text-[#221b14]/60">
             From quick business stops to long family relocations — choose the
             suite that matches your rhythm. Every room is serviced, private,
             and thoughtfully designed.
@@ -268,7 +268,7 @@ export default function SuitesPage() {
                     anim={isReversed ? "right" : "left"}
                     className={`relative overflow-hidden ${isReversed ? "lg:order-2" : ""}`}
                   >
-                    <div className="aspect-[4/3] overflow-hidden bg-[#1a1815]">
+                    <div className="aspect-[4/3] overflow-hidden bg-[#e9dfc9]">
                       <img
                         src={suite.image}
                         alt={suite.name}
@@ -289,35 +289,35 @@ export default function SuitesPage() {
                     className={`flex flex-col justify-center ${isReversed ? "lg:order-1" : ""}`}
                   >
                     <div>
-                      <p className="mb-1 text-[10px] tracking-[0.3em] text-[#c9a96e]">
+                      <p className="mb-1 text-[10px] tracking-[0.3em] text-[#b08d4f]">
                         SUITE {suite.id}
                       </p>
-                      <h2 className="font-serif text-[28px] text-white sm:text-[32px]">
+                      <h2 className="font-serif text-[28px] text-[#221b14] sm:text-[32px]">
                         {suite.name}
                       </h2>
-                      <p className="mt-2 text-[14px] italic text-white/50">
+                      <p className="mt-2 text-[14px] italic text-[#221b14]/55">
                         {suite.tagline}
                       </p>
                     </div>
 
                     {/* Quick Stats */}
                     <div className="mt-6 flex flex-wrap gap-6">
-                      <div className="flex items-center gap-2 text-[12px] text-white/50">
-                        <Maximize size={14} className="text-[#c9a96e]/60" />
+                      <div className="flex items-center gap-2 text-[12px] text-[#221b14]/60">
+                        <Maximize size={14} className="text-[#b08d4f]" />
                         {suite.size}
                       </div>
-                      <div className="flex items-center gap-2 text-[12px] text-white/50">
-                        <Users size={14} className="text-[#c9a96e]/60" />
+                      <div className="flex items-center gap-2 text-[12px] text-[#221b14]/60">
+                        <Users size={14} className="text-[#b08d4f]" />
                         {suite.guests}
                       </div>
-                      <div className="flex items-center gap-2 text-[12px] text-white/50">
-                        <BedDouble size={14} className="text-[#c9a96e]/60" />
+                      <div className="flex items-center gap-2 text-[12px] text-[#221b14]/60">
+                        <BedDouble size={14} className="text-[#b08d4f]" />
                         {suite.bed}
                       </div>
                     </div>
 
                     <div>
-                      <p className="mt-6 text-[13px] leading-[1.85] text-white/40">
+                      <p className="mt-6 text-[13px] leading-[1.85] text-[#221b14]/60">
                         {suite.description}
                       </p>
                     </div>
@@ -325,8 +325,8 @@ export default function SuitesPage() {
                     {/* Highlights */}
                     <div className="mt-6 space-y-2">
                       {suite.highlights.map((h) => (
-                        <div key={h} className="flex items-center gap-3 text-[12px] text-white/50">
-                          <span className="h-1 w-1 rounded-full bg-[#c9a96e]" />
+                        <div key={h} className="flex items-center gap-3 text-[12px] text-[#221b14]/60">
+                          <span className="h-1 w-1 rounded-full bg-[#b08d4f]" />
                           {h}
                         </div>
                       ))}
@@ -336,17 +336,17 @@ export default function SuitesPage() {
                     <div className="mt-8 grid grid-cols-3 gap-4">
                       {suite.amenities.map((a) => (
                         <div key={a.label} className="flex items-center gap-2">
-                          <a.icon size={14} className="text-[#c9a96e]/70" />
-                          <span className="text-[11px] text-white/40">{a.label}</span>
+                          <a.icon size={14} className="text-[#b08d4f]" />
+                          <span className="text-[11px] text-[#221b14]/60">{a.label}</span>
                         </div>
                       ))}
                     </div>
 
                     {/* CTA */}
-                    <div className="mt-8 border-t border-white/6 pt-6">
+                    <div className="mt-8 border-t border-[#221b14]/10 pt-6">
                       <a
                         href="tel:+919986197711"
-                        className="group inline-flex items-center gap-3 bg-white px-6 py-3 text-[11px] font-medium tracking-[0.15em] text-[#12110f] transition-colors hover:bg-[#c9a96e]"
+                        className="group inline-flex items-center gap-3 bg-[#221b14] px-6 py-3 text-[11px] font-medium tracking-[0.15em] text-[#faf6ee] transition-colors hover:bg-[#b08d4f]"
                       >
                         ENQUIRE NOW
                         <ArrowRight
@@ -360,7 +360,7 @@ export default function SuitesPage() {
 
                 {/* Divider */}
                 {index < SUITES.length - 1 && (
-                  <div className="mt-16 border-t border-white/6" />
+                  <div className="mt-16 border-t border-[#221b14]/10" />
                 )}
               </Reveal>
             );
@@ -369,16 +369,16 @@ export default function SuitesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="border-t border-white/6 px-6 py-20 md:px-16">
+      <section className="border-t border-[#221b14]/10 px-6 py-20 md:px-16">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal anim="scale">
-            <p className="mb-3 text-[11px] tracking-[0.3em] text-[#c9a96e]">
+            <p className="mb-3 text-[11px] tracking-[0.3em] text-[#b08d4f]">
               NEED HELP CHOOSING?
             </p>
-            <h2 className="font-serif text-[32px] text-white sm:text-[40px]">
+            <h2 className="font-serif text-[32px] text-[#221b14] sm:text-[40px]">
               Not sure which suite is right for you?
             </h2>
-            <p className="mt-5 text-[14px] leading-[1.8] text-white/40">
+            <p className="mt-5 text-[14px] leading-[1.8] text-[#221b14]/60">
               Give us a call and we'll help you pick the perfect match for your
               stay. Whether it's a night, a week, or a few months — we've got
               you covered.
@@ -386,14 +386,14 @@ export default function SuitesPage() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
               <a
                 href="tel:+919986197711"
-                className="group flex items-center gap-3 bg-white px-8 py-3.5 text-[11px] font-medium tracking-[0.18em] text-[#12110f] transition-colors hover:bg-[#c9a96e]"
+                className="group flex items-center gap-3 bg-[#221b14] px-8 py-3.5 text-[11px] font-medium tracking-[0.18em] text-[#faf6ee] transition-colors hover:bg-[#b08d4f]"
               >
                 <Phone size={14} />
                 CALL US NOW
               </a>
               <a
                 href="mailto:nayazsheriff@richmondsuites.in"
-                className="text-[12px] tracking-[0.15em] text-white/50 transition-colors hover:text-white"
+                className="text-[12px] tracking-[0.15em] text-[#221b14]/60 transition-colors hover:text-[#221b14]"
               >
                 EMAIL INQUIRY
               </a>
@@ -403,29 +403,29 @@ export default function SuitesPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#110f0d] px-6 pt-16 pb-8 md:px-16">
+      <footer className="bg-[#e9dfc9] px-6 pt-16 pb-8 md:px-16">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-12 md:grid-cols-4 md:gap-8">
             <div className="md:col-span-2">
               <div className="mb-4 flex items-center gap-2">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#c9a96e]">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#b08d4f]">
                   <path d="M12 2C9 6 9 10 12 14C15 10 15 6 12 2Z" fill="currentColor" />
                   <path d="M12 22V13" stroke="currentColor" strokeWidth="1.2" />
                 </svg>
-                <span className="font-serif text-[13px] tracking-[0.18em] text-white">
+                <span className="font-serif text-[13px] tracking-[0.18em] text-[#221b14]">
                   RICHMOND SUITES
                 </span>
               </div>
-              <p className="max-w-xs text-[13px] leading-relaxed text-white/35">
+              <p className="max-w-xs text-[13px] leading-relaxed text-[#221b14]/55">
                 Serviced suites in Richmond Town, Bengaluru. A settled, comfortable way to stay.
               </p>
             </div>
             <div>
-              <p className="mb-4 text-[10px] tracking-[0.3em] text-white/30">SUITES</p>
+              <p className="mb-4 text-[10px] tracking-[0.3em] text-[#221b14]/45">SUITES</p>
               <div className="flex flex-col gap-2.5">
                 {["Executive Studio", "Deluxe Suite", "Family Suite", "Premium Residence"].map(
                   (link) => (
-                    <a key={link} href="#" className="text-[13px] text-white/45 transition-colors hover:text-white/80">
+                    <a key={link} href="#" className="text-[13px] text-[#221b14]/60 transition-colors hover:text-[#221b14]">
                       {link}
                     </a>
                   )
@@ -433,14 +433,14 @@ export default function SuitesPage() {
               </div>
             </div>
             <div>
-              <p className="mb-4 text-[10px] tracking-[0.3em] text-white/30">CONTACT</p>
-              <div className="flex flex-col gap-2.5 text-[13px] text-white/45">
-                <a href="tel:+919986197711" className="hover:text-white/80">+91 99861 97711</a>
-                <a href="mailto:nayazsheriff@richmondsuites.in" className="hover:text-white/80">nayazsheriff@richmondsuites.in</a>
+              <p className="mb-4 text-[10px] tracking-[0.3em] text-[#221b14]/45">CONTACT</p>
+              <div className="flex flex-col gap-2.5 text-[13px] text-[#221b14]/60">
+                <a href="tel:+919986197711" className="hover:text-[#221b14]">+91 99861 97711</a>
+                <a href="mailto:nayazsheriff@richmondsuites.in" className="hover:text-[#221b14]">nayazsheriff@richmondsuites.in</a>
               </div>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/6 pt-6 text-[11px] text-white/20">
+          <div className="mt-12 border-t border-[#221b14]/10 pt-6 text-[11px] text-[#221b14]/40">
             © 2026 Richmond Suites. All rights reserved.
           </div>
         </div>
